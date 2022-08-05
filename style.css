@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,700;1,600&display=swap');
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+  list-style: none;
+}
+
+body{
+  background-color: black;
+}
+
+header{
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,.4)), url(./images/DSC_2814.jpg);
+  background-position: center;
+  background-size: contain;
+  height: 100vh;
+}
+
+.sec{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  align-items: center;
+}
+
+.portfolio{
+  display: flex;
+  align-items: center;
+}
+
+.portfolio img{
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.icon{
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.port{
+  color: gainsboro;
+  font-style: italic;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.twitter,
+.github{
+  background-color: gainsboro;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon i{
+  color: black;
+  font-size: x-large;
+}
+
+/* MAIN */
+main{
+  color: gainsboro;
+  width: 80%;
+  margin: auto;
+  font-size: 50px;
+  margin-top: 110px;
+}
+
+main .name{
+  color: #ffb3ff;
+  font-weight: bold;
+}
+
+main span{
+  color: #e600e6;
+}
+
+main p{
+  color: gainsboro;
+  font-weight: 500;
+}
+
+main .page{
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  align-items: center;
+  color: black;
+  background-color: gainsboro;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 30px;
+  cursor: pointer;
+  font-style: italic;
+}
+
+main .page:hover{
+  opacity: .7;
+}
+main i{
+  color: black;
+}
+
+/* ARTICLE */
+article{
+  margin: auto;
+  margin-top: 100px;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  padding: 20px 0;
+  border-top: 2px solid #ffb3ff;
+  border-bottom: 2px solid #ffb3ff;
+}
+
+article img{
+  width: 500px;
+  height: 500px;
+  flex-basis: 50%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+article .about{
+  flex-basis: 50%;
+  color: gainsboro;
+}
+
+article h4{
+  display: inline;
+  font-size: 35px;
+  background-color: gainsboro;
+  color: black;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+article .dev{
+  font-size: 35px;
+  margin-top: 20px;
+}
+
+article span{
+  color: #e600e6;
+  font-weight: bold;
+}
+article .info{
+  color: #ffe6ff;
+  font-style: italic;
+}
+
+/* PROJECTS */
+.projects{
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  margin-top: 100px;
+  padding: 10px 0;
+}
+
+.projects h1{
+  display: inline;
+  color:  black;
+  background-color: gainsboro;
+  padding: 10px;
+  border-radius: 10px;
+  text-transform: capitalize;
+  font-style: italic;
+  cursor: pointer;
+}
+
+.projects h1:hover{
+  opacity: .8;
+}
+
+.AMP{
+  margin-top: 50px;
+  padding: 10px;
+  border-radius: 10px;
+  font-style: italic;
+}
+
+.AMP a{
+  font-size: 35px;
+  color: gainsboro;
+}
+
+.AMP li{
+  margin-bottom: 10px;
+}
+.AMP i{
+  color: #ffb3ff;
+  font-size: 20px;
+}
+
+/* FOOTER */
+footer{
+  margin-top: 100px;
+  border-top: 2px solid #ffb3ff;
+  border-bottom: 2px solid #ffb3ff;
+  color: white;
+  padding: 10px;
+}
+
+footer h1{
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffb3ff;
+}
+
+footer span{
+  color: #e600e6;
+}
+footer section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+footer .white{
+  background-color: gainsboro;
+  color: black;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  font-style: italic;
+}
+
+footer .white h4{
+  color: #e600e6;
+  font-weight: bold;
+}
+
+i{
+  color: #e600e6;
+}
+
+footer i{
+  font-size: 25px;
+}
+/* MEDIA QUERY */
+@media (max-width:769px) {
+  header{
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .sec{
+    padding: 10px 10px;
+  }
+  .portfolio img{
+    width: 40px;
+    height: 40px;
+  }
+  .twitter,
+  .github{
+    width: 25px;
+    height: 25px;
+  }
+  .icon i{
+    font-size: medium;
+  }
+  .port{
+    font-size: 20px;
+  }
+  main{
+    font-size: 30px;
+    margin-top: 180px;
+  }
+  main .page{
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  article{
+    flex-direction: column;
+  }
+  article img{
+    width: 200px;
+    height: 200px;
+  }
+  article .about{
+    text-align: center;
+  }
+  article h4 {
+    font-size: 25px;
+  }
+  article .dev {
+    font-size: 25px;
+  }
+  .AMP a {
+    font-size: 25px;
+  }
+  footer section{
+    flex-direction: column;
+  }
+}
